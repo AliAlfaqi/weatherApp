@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2" href="#">
+                Weather<img src="icons/02_iday.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-5">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-6 fw-bolder" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item fs-6 fw-bolder">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item fs-6 fw-bolder">
+                        <a class="nav-link" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item fs-6 fw-bolder">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item fs-6 fw-bolder">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="d-flex input-container">
+            <input type="text" class="form-control shadow-none">
+            <button class="btn btn-dark">Find</button>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 bg-light p-0">
+                <div class="d-flex justify-content-between bg-dark text-white px-2 pt-3">
+                    <p class="current-day">Today</p>
+                    <p class="current-date">Day Month</p>
+                </div>
+                <div class="bg-light p-3">
+                    <p class="location">City</p>
+                    <p class="avg-temp fw-bolder" style="font-size: 5em;">20°c</p>
+                    <div class="condition-container">
+                        <p class="condition ps-3 d-inline">condition</p>
+                        <img src="//cdn.weatherapi.com/weather/64x64/night/296.png" alt="" style="width: 50px">
+                    </div>
+                </div>
+                <div class="bg-light d-flex">
+                    <p class="humidity px-3">Humidity</p>
+                    <p class="windSpeed px-3">wind Speed</p>
+                    <p class="windDirection px-3">Wind Direction</p>
+                </div>
+            </div>
+            <div class="col-lg-4 bg-light p-0">
+                <div class="d-flex justify-content-center bg-dark text-white px-2 pt-3">
+                    <p class="tomorrow-day">Tomorrow</p>
+                </div>
+                <div class="bg-light p-3">
+                    <div class="condition-container d-flex justify-content-center ">
+                        <div class="text-center">
+                            <img src="//cdn.weatherapi.com/weather/64x64/night/296.png" class="d-block tomorrowIcon"
+                                alt="">
+                            <p class="tomorrowCondition ps-3 d-inline">condition</p>
+                            <p class="tomorrowTemp fw-bolder" style="font-size: 5em;">20°c</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 bg-light p-0">
+                <div class="d-flex justify-content-center bg-dark text-white px-2 pt-3">
+                    <p class="afterTomorrowDay">After Tomorrow</p>
+                </div>
+                <div class="bg-light p-3">
+                    <div class="condition-container d-flex justify-content-center ">
+                        <div class="text-center">
+                            <img src="//cdn.weatherapi.com/weather/64x64/night/296.png"
+                                class="d-block afterTomorrowIcon" alt="">
+                            <p class="afterTomorrowCondition ps-3 d-inline">condition</p>
+                            <p class="afterTomorrowTemp fw-bolder" style="font-size: 5em;">20°c</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>

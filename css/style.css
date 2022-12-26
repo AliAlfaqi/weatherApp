@@ -1,0 +1,28 @@
+.navbar-brand img {
+    width: 80px;
+}
+
+input {
+    border-radius: 20px !important;
+}
+
+.input-container {
+    margin-bottom: 100px;
+}
+
+button {
+    transform: translateX(-57px);
+    border-radius: 20px !important;
+}
+
+
+.tomorrowIcon,
+.afterTomorrowIcon {
+    transform: translate(63px, -10px);
+    width: 50px;
+}
+
+/* .padding-0 {
+    padding-right: 0;
+    padding-left: 0;
+} */
